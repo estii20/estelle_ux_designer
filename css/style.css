@@ -142,3 +142,77 @@ h5 {
 .fab {
     color: #000000;
 }
+
+/* Footer Styling */
+footer.footer {
+    background: #000000;
+    color: #d2e3f0;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .footer h3 {
+    font-size: 1.3rem;
+    color: #cfd8e3;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p,
+  .footer a {
+    color: #d2e3f0;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer Column Styles */
+  .footer-about,
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1 1 250px;
+  }
+  
+  /* Quick Links */
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Social Media Icons */
+  .footer-social a {
+    margin-right: 0.5rem;
+    display: inline-block;
+    color: #d2e3f0; 
+    font-size: 1.5rem; 
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #00aaff; 
+    transform: scale(1.1);
+  }
+  
+  /* Bottom Footer */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    border-top: 1px solid #cfd8e3;
+    margin-top: 1.5rem;
+  }
