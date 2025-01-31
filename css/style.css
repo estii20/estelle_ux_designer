@@ -14,6 +14,7 @@ body {
     padding: 0;
     text-align: center;
 }
+
 .btn {
     background: #E900FF;
     color: #000;
@@ -24,12 +25,14 @@ body {
     display: inline-block;
     margin-top: 20px;
 }
+
 .projects img {
     width: 100%;
     max-width: 500px;
     border: 3px solid #FFC600;
     border-radius: 10px;
 }
+
 .contact a {
     color: #FFC600;
     text-decoration: none;
