@@ -7,7 +7,9 @@
     <!-- linking css file -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Homemade+Apple&family=Shadows+Into+Light&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;700&display=swap" 
+    rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Estelle's UX Portfolio</title>
 </head>
@@ -15,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand text-white" href="index.html">
-                <img src="images/logo.png" class="img-fluid logo" alt="Estelle's Logo">
+                <img src="images/logo.png" class="logo" alt="Estelle's Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -48,9 +50,9 @@
         </div>
     </nav>
 
-    <!-- main banner -->
+    <!-- Hero image -->
     <section class="bgimage" id="home">
-        <div class="container-fluid">
+        <div class="container-fluid py-5">
             <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
                 <h2 class="hero_title">Hi, I'm Estelle</h2>
@@ -64,70 +66,40 @@
         </div>
     </section>
 
-    <section id="about" class="bg-black text-white py-5">
+    <!-- About Section -->
+    <section id="about" class="bg-black text-white py-5 fade-in">
         <div class="container">
             <h1 class="text-center mb-4 text-neon">About Me</h1>
             <div class="row align-items-center">
-                <!-- Profile Image -->
                 <div class="col-lg-4 col-md-6 text-center">
                     <img src="images/photo.png" class="img-fluid rounded-circle shadow-lg circle-image" alt="Estelle Specht">
                 </div>
-    
-                <!-- About Info -->
                 <div class="col-lg-8 col-md-6">
                     <div class="card bg-dark text-light border-neon p-4">
                         <h2 class="text-neon">Estelle Specht</h2>
                         <h5 class="text-muted">Freelance Web Developer & UX Designer</h5>
-                        <p>
-                            I specialise in front-end development and UX design, focusing on creating accessible digital experiences. 
-                            Proficient in CSS, JavaScript, Python, and frameworks like Bootstrap & Django.
-                        </p>
-                        
-                        <!-- Skills Section -->
+                        <p>I specialize in front-end development and UX design, focusing on accessibility.</p>
+
+                        <!-- Skills Accordion -->
                         <div class="accordion" id="skillsAccordion">
-                            <!-- Technical Skills -->
-                            <div class="accordion-item bg-black border-neon">
+                            <div class="accordion-item border-neon">
                                 <h2 class="accordion-header">
-                                    <button class="accordion-button bg-dark text-light" type="button" 
-                                    data-bs-toggle="collapse" data-bs-target="#technicalSkills">
+                                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#technicalSkills">
                                         Technical Skills
                                     </button>
                                 </h2>
-                                <div id="technicalSkills" class="accordion-collapse collapse show" 
-                                data-bs-parent="#skillsAccordion">
+                                <div id="technicalSkills" class="accordion-collapse collapse show">
                                     <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li>✔ Front-End Development: CSS, JavaScript, Python</li>
-                                            <li>✔ UX Design with Accessibility</li>
-                                            <li>✔ Database Management</li>
-                                            <li>✔ Dev Tools: Bootstrap, Django, jQuery, PyTest</li>
-                                            <li>✔ Code Testing</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <!-- Soft Skills -->
-                            <div class="accordion-item bg-black border-neon">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button bg-dark text-light" type="button" 
-                                    data-bs-toggle="collapse" data-bs-target="#softSkills">
-                                        Soft Skills
-                                    </button>
-                                </h2>
-                                <div id="softSkills" class="accordion-collapse collapse" data-bs-parent="#skillsAccordion">
-                                    <div class="accordion-body">
-                                        <ul class="list-unstyled">
-                                            <li>✔ Excellent verbal & written communication</li>
-                                            <li>✔ Strong problem-solving abilities</li>
-                                            <li>✔ Customer Service & Support</li>
-                                            <li>✔ Team collaboration & adaptability</li>
+                                        <ul>
+                                            <li>✔ Front-End Development (CSS, JavaScript, Python)</li>
+                                            <li>✔ UX Design & Accessibility</li>
+                                            <li>✔ Bootstrap, Django, PyTest</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-    
+
                         <a href="#contact" class="btn btn-neon mt-3">Contact Me</a>
                     </div>
                 </div>
@@ -137,7 +109,7 @@
     
 
     <!-- portfolio section-->
-    <section id="portfolio" class="bg-black text-white">
+    <section id="portfolio" class="bg-black text-white py-5 fade-in">
         <div class="container mt-3">
             <h1 class="text-center">Portfolio</h1>
             <div class="row">
@@ -258,7 +230,7 @@
     </section>
 
     <!-- Contact Section-->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="bg-black text-white py-5 fade-in">
         <div class="container mt-5 contact-content">
             <h2 class="text-center text-white mb-5 section-title">Contact Us</h2>
 
@@ -304,7 +276,7 @@
             <h3>About</h3>
             <p>Freelance Web Developer & UX Designer</p>
         </div>
-        <img src="images/estelle_specht_font.png" class="img-fluid logo" alt="Estelle's Font">        
+        <img src="images/estelle_specht_font.png" class="logo" alt="Estelle's Font">        
     
         <!-- Quick Links -->
         <div class="footer-links">
@@ -339,6 +311,17 @@
         </div>
     </footer>
 
+    <!-- Navbar JS -->
+    <script>
+        window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/f75c96defe.js" crossorigin="anonymous" defer></script>
