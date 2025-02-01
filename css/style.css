@@ -33,6 +33,15 @@ h5 {
     color: #FFC600;
 }
 
+/* spacing on all sections */
+#services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
 /* hero background image */
 .bgimage {
     height: 60vh;
@@ -191,6 +200,88 @@ a.btn-neon {
 .fab {
     color: #000000;
 }
+
+/* Contact Section */
+#contact {
+    background-color: #000000 !important; 
+    padding: 10px 0;
+  }
+  
+  .contact-section {
+    padding: 60px 0;
+    border-top: 2px solid #1976d2;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #1976d2;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #1976d2;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Form Styling */
+  .contact-form .input-group {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .input-group-text {
+    background-color: #5800FF;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .form-control, .form-control-lg {
+    border-radius: 0 8px 8px 0;
+    border: none;
+    box-shadow: none;
+  }
+  
+  .custom-btn {
+    background: #000000;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background: #5800FF;
+    transform: scale(1.05);
+  }
+  
+  /* Decorative Image Styling */
+  .contact-image img {
+    width: 80%;
+    transition: transform 0.3s ease;
+    border: 5px solid #5800FF;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-image img:hover {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  
 
 /* Footer Styling */
 footer.footer {
